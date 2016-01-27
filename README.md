@@ -25,3 +25,10 @@
   - Local file system
   - Remote data
 - Using Telerik backend services
+
+## [Documentation](https://docs.nativescript.org/)
+### Set Up Your System
+#### [Official guide for Windows](http://docs.nativescript.org/start/ns-setup-win)
+#### [Official guide for GNU/Linux](http://docs.nativescript.org/start/ns-setup-linux)
+#### [Official guide for OS X](http://docs.nativescript.org/start/ns-setup-os-x)
+
