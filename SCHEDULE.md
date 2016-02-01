@@ -1,30 +1,31 @@
 # Mobile applications with NativeScript
 
-| Topic title                   | Description | Date | Starts at | Duration | Trainer |
-| Course Introduction 
+| Topic title                    | Description | Date | Starts at | Duration | Trainer |
+| ------------------------------ | ----------- | ---- | --------- | -------- | ------- |
+| Course Introduction            |
 | Setup NativeScript Environment |
-| Core concepts |
-| Application architecture |
-| Modules |
-| Data binding |
-| Events |
-| Transpilers |
-| UI |
-| Components |
-| Layouts |
-| Styling |
-| Gestures |
-| Animations |
-| Action Bar |
-| Hardware access |
-| Location |
-| Camera |
-| Plugins |
-| Native API access |
-| Working with data |
-| SQLite |
-| Local file system |
-| Remote data |
+| Core concepts                  |
+| Application architecture       |
+| Modules                        |
+| Data binding                   |
+| Events                         |
+| Transpilers                    |
+| UI                             |
+| Components                     |
+| Layouts                        |
+| Styling                        |
+| Gestures                       |
+| Animations                     |
+| Action Bar                     |
+| Hardware access                |
+| Location                       |
+| Camera                         |
+| Plugins                        |
+| Native API access              |
+| Working with data              |
+| SQLite                         |
+| Local file system              |
+| Remote data                    |
 | Using Telerik backend services |
 
 ## [Documentation](https://docs.nativescript.org/)
@@ -32,4 +33,3 @@
 #### [Official guide for Windows](http://docs.nativescript.org/start/ns setup win)
 #### [Official guide for GNU/Linux](http://docs.nativescript.org/start/ns setup linux)
 #### [Official guide for OS X](http://docs.nativescript.org/start/ns setup os x)
-
