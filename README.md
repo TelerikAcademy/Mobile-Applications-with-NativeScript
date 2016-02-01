@@ -30,3 +30,10 @@ The topics will consist of:
   - Remote data through HTTP
 
 The full course schedule and program can be found [here](/SCHEDULE.md)
+
+<!-- Documentation -->
+## [Documentation](https://docs.nativescript.org/)
+### Set Up Your System
+#### [Official guide for Windows](http://docs.nativescript.org/start/ns setup win)
+#### [Official guide for GNU/Linux](http://docs.nativescript.org/start/ns setup linux)
+#### [Official guide for OS X](http://docs.nativescript.org/start/ns setup os x)
