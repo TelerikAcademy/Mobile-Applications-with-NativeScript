@@ -6,7 +6,7 @@
 <!-- Overview -->
 The "Mobile applications with NativeScript" course shows the student how to create cross-platform applications using JavaScript.
 
-The topics of the course will cover the platform Telerik NativeScript, that allows the creation of **native** applications using JavaScript (TypeScript), CSS and HTML. 
+The topics of the course will cover the platform Telerik NativeScript, that allows the creation of **native** applications using JavaScript (TypeScript), CSS and XML. 
 
 <!-- Prerequisits -->
 To take part in the course, all participants must have advanced skills in JavaScript and modular JavaScript. Basic CSS and HTML skills are a plus
