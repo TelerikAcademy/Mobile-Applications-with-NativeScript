@@ -1,3 +1,3 @@
 ## Course Introduction
-### [View Presentation onlie]()
+### [View Presentation online]()
 ### Table of Contents
