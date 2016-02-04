@@ -42,7 +42,7 @@
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
 |:-------------------------------|:----------------------------------------------------------------|:----------|:---------|:--------|
 | Hardware access                | Accessing camera, location and other native.                    |           |          | Cuki    |
-| Native API access              | Accessing native APIs (functions, arrays, classes, etc... ).    |           |          | Marto   |
+| Native API access              | Accessing native APIs (functions, arrays, classes, etc... ).    |           |          | Plamen  |
 | **Workshop**                   |                                                                 |           |          | Anyone  |
 
 ## Thursday 18 February 2016
