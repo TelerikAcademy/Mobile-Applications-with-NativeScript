@@ -4,7 +4,7 @@
 ## Modules
 
 <div class="signature">
-    <p class="signature-course">Mobile Applications NativeScript</p>
+    <p class="signature-course">Mobile Applications with NativeScript</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
