@@ -109,11 +109,11 @@ http.getString("https://example.org/").then(function(response) {
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
-# Device functionality module
+# Device Functionality Modules
 ## Subtitle
 
 <!-- attr: { showInPresentation:true } -->
-<!-- # Device functionality module -->
+<!-- # Device Functionality Modules -->
 - `platform` module
 
 ```js
