@@ -130,6 +130,27 @@ console.log("Screen scale: " + platformModule.screen.mainScreen.scale);
 ```
 
 <!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+# Data Modules
+## Subtitle
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Data Modules -->
+- `data/observable`, `data/observable-array`, `data/virtual-array`
+  - Used for databinding
+
+```js
+var observable = require("data/observable");
+
+var person = new observable.Observable({
+	/* properties */
+});
+```
+
+<!-- TODO: more examples -->
+<!-- TODO: UI and other modules -->
+
+<!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
 # Questions
 ## Modules
