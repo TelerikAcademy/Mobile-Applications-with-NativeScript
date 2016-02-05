@@ -44,21 +44,42 @@ else if (app.ios) {
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
 - `console` module
-  - Logging
-  - Time
-  - Assert
-  - Dir
-  - Dump
-  - Trace
+  - Logging, Time, Assert, Dir, Dump, Trace
+  - `console` variable is global
+  - Logs appear in `logcat`
 - [Examples](https://docs.nativescript.org/ApiReference/console/HOW-TO.html)
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
 - `application-settings` module - save and restore information
+  - `setBoolean`, `getBoolean` - for boolean values
+  - `setString`, `getString` - for strings
+  - `setNumber`, `getNumber` - for numeric values
+    - `toFixed` - used to avoid floating point errors
+  - `hasKey`, `remove`
+
+```js
+var appSettings = require("application-settings");
+
+appSettings.setBoolean("boolKey", true);
+var value = appSettings.getBoolean("boolKey", false);
+```
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
 - `http` module - send requests and receive responses
+  - `getString`, `getJSON`, `getImage` - take url as a string
+  - `request` - takes object with url, method, headers, content
+
+```js
+var http = require("http");
+
+http.getString("https://example.org/").then(function(response) {
+	/* do something */
+}, function(error) {
+	/* log error */
+});
+```
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
@@ -67,6 +88,8 @@ else if (app.ios) {
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
 - `timer` module - create, start, stop and react to timers
+  - `setTimeout`, `clearTimeout`
+  - `setInterval`, `clearInterval`
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
