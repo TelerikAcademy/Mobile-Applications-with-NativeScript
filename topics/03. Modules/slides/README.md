@@ -65,7 +65,7 @@ appSettings.setBoolean("boolKey", true);
 var value = appSettings.getBoolean("boolKey", false);
 ```
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size:44px' } -->
 <!-- # Core Modules -->
 - `http` module - send requests and receive responses
   - `getString`, `getJSON`, `getImage` - take url as a string
@@ -74,7 +74,8 @@ var value = appSettings.getBoolean("boolKey", false);
 ```js
 var http = require("http");
 
-http.getString("https://example.org/").then(function(response) {
+http.getString("https://example.org/")
+  .then(function(response) {
 	/* do something */
 }, function(error) {
 	/* log error */
