@@ -137,7 +137,7 @@ console.log("Screen scale: " + platformModule.screen.mainScreen.scale);
 <!-- attr: { showInPresentation:true } -->
 <!-- # Data Modules -->
 - `data/observable`, `data/observable-array`, `data/virtual-array`
-  - Used for databinding
+  - Used for data binding
 
 ```js
 var observable = require("data/observable");
