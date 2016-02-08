@@ -84,25 +84,17 @@ http.getString("https://example.org/")
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
-- `image-source` module
-
-<!-- attr: { showInPresentation:true } -->
-<!-- # Core Modules -->
 - `timer` module - create, start, stop and react to timers
   - `setTimeout`, `clearTimeout`
   - `setInterval`, `clearInterval`
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
-- `trace` module
-
-<!-- attr: { showInPresentation:true } -->
-<!-- # Core Modules -->
-- `ui/image-cache` module
-
-<!-- attr: { showInPresentation:true } -->
-<!-- # Core Modules -->
-- `connectivity` module - check for internet connection
+- [Other core modules](https://docs.nativescript.org/core-concepts/modules#core-modules)
+  - `trace` module - trace information based on categories
+  - `image-source` module
+  - `ui/image-cache` module - cache downloaded images
+  - `connectivity` module - check for internet connection
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- Core Modules -->
