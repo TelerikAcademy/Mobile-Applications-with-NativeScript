@@ -11,23 +11,23 @@
 ## Thursday 11 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
 |:-------------------------------|:----------------------------------------------------------------|:----------|:---------|:--------|
-| Modules                        | Core, device, data and UI modules.                              |           |          | Cuki    |
-| Data binding                   | Binding concepts.                                               |           |          | Cuki    |
+| UI Components                  | Button, Label, Views, etc...                                    |           |          |  Marto  |
+| Layouts                        | Layout process, layout paddings and predefined layouts.         |           |          |  Marto  |
+| Styling                        | Using CSS and currently supported properties and selectors.     |           |          |  Marto  |
 | **Workshop**                   |                                                                 |           |          | Anyone  |
 
 ## Friday 12 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
 |:-------------------------------|:----------------------------------------------------------------|:----------|:---------|:--------|
-| Events                         | Handling events in NativeScript.                                |           |          | Doncho  |
-| Transpilers                    | TypeScript, Babel, LESS, Jade and others.                       |           |          | Doncho  |
+| Modules                        | Core, device, data and UI modules.                              |           |          | Cuki    |
+| Data binding                   | Binding concepts.                                               |           |          | Cuki    |
 | **Workshop**                   |                                                                 |           |          | Anyone  |
 
 ## Monday 15 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
 |:-------------------------------|:----------------------------------------------------------------|:----------|:---------|:--------|
-| UI Components                  | Button, Label, Views, etc...                                    |           |          |  Marto  |
-| Layouts                        | Layout process, layout paddings and predefined layouts.         |           |          |  Marto  |
-| Styling                        | Using CSS and currently supported properties and selectors.     |           |          |  Marto  |
+| Events                         | Handling events in NativeScript.                                |           |          | Doncho  |
+| Transpilers                    | TypeScript, Babel, LESS, Jade and others.                       |           |          | Doncho  |
 | **Workshop**                   |                                                                 |           |          | Anyone  |
 
 ## Tuesday 16 February 2016
