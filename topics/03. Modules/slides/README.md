@@ -65,7 +65,7 @@ appSettings.setBoolean("boolKey", true);
 var value = appSettings.getBoolean("boolKey", false);
 ```
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size:44px' } -->
 <!-- # Core Modules -->
 - `http` module - send requests and receive responses
   - `getString`, `getJSON`, `getImage` - take url as a string
@@ -74,16 +74,13 @@ var value = appSettings.getBoolean("boolKey", false);
 ```js
 var http = require("http");
 
-http.getString("https://example.org/").then(function(response) {
+http.getString("https://example.org/")
+  .then(function(response) {
 	/* do something */
 }, function(error) {
 	/* log error */
 });
 ```
-
-<!-- attr: { showInPresentation:true } -->
-<!-- # Core Modules -->
-- `image-source` module
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
@@ -93,15 +90,11 @@ http.getString("https://example.org/").then(function(response) {
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
-- `trace` module
-
-<!-- attr: { showInPresentation:true } -->
-<!-- # Core Modules -->
-- `ui/image-cache` module
-
-<!-- attr: { showInPresentation:true } -->
-<!-- # Core Modules -->
-- `connectivity` module - check for internet connection
+- [Other core modules](https://docs.nativescript.org/core-concepts/modules#core-modules)
+  - `trace` module - trace information based on categories
+  - `image-source` module
+  - `ui/image-cache` module - cache downloaded images
+  - `connectivity` module - check for internet connection
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- Core Modules -->
@@ -137,7 +130,7 @@ console.log("Screen scale: " + platformModule.screen.mainScreen.scale);
 <!-- attr: { showInPresentation:true } -->
 <!-- # Data Modules -->
 - `data/observable`, `data/observable-array`, `data/virtual-array`
-  - Used for databinding
+  - Used for data binding
 
 ```js
 var observable = require("data/observable");
