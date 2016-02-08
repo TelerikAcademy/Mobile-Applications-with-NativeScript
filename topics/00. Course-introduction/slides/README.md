@@ -1,10 +1,10 @@
 <!-- section start -->
 <!-- attr: { id:'title', class:'slide-title', hasScriptWrapper:true } -->
-# Mobile Applications for iPhone and iPad
+# Mobile Applications with NativeScript
 ## Course Program, Evaluation, Exam, Trainers, Resources
 
 <div class="signature">
-    <p class="signature-course">Mobile Applications for iPhone and iPad</p>
+    <p class="signature-course">Mobile Applications with NativeScript</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -14,61 +14,55 @@
 <!-- attr: { id:'table-of-contents' } -->
 # Table of Contents
 - What's Coming Next in the Academy?
-- The Mobile Applications for iPhone and iPad Course Program
+- The Mobile Applications with NativeScript Course Program
 - The Trainers Team
 - Exams and Evaluation
-  - The Practical Exam
+  - The Practical Project
 - Resources for the Course
 
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', id:'coming-next', showInPresentation: true } -->
-<!-- # Mobile Applications for iPhone and iPad
+<!-- # Mobile Applications with NativeScript
 ## The Next Course in the Mobile Track of the Telerik Software Academy -->
 
 <!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em' } -->
 # What's Coming Next?
-- **Mobile Applications for iPhone and iPad** Course
-  - Objective-C and Swift programming languages
-  - Creating applications with Cocoa Touch
-  - Storyboards, Views, animations
+- **Mobile Applications with NativeScript** Course
+  - NativeScript introduction
+  - Creating cross-platform mobile applications with JavaScript, XML and CSS
 - Lectures 5 times a week
 - The course examination?
   - Course project
-    - in teams of 1
-	- Monday, February 8, 2016
+    - in teams of 2
+	- Tuesday, February 23, 2016
 
 
 [Curriculum](http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0)
 
 <!-- section start -->
 <!-- attr: {class: 'slide-section', id: 'spa-program', showInPresentation: true} -->
-<!-- # Mobile Applications for iPhone and iPad Course Program
+<!-- # Mobile Applications with NativeScript Course Program
 ## Topis that will be covered? -->
 
-<!-- attr: { hasScriptWrapper:true, style:'font-size:32px' } -->
+<!-- attr: { hasScriptWrapper:true, style:'font-size:38px' } -->
 # The Course Program
 
 - **First week:**
-  - Fast-track cover of the **Swift programming language**
-  - Introduction to creating mobile applications
+  - Getting to know NativeScript and setup the environment
+  - Application architecture
+  - Modules, data-binding and events
 - **Second week:**
-  - Views
+  - Layouts and UI components
+  - Gestures and animations
+  - Hardware and native API access
   - Working with data
-    - LocalData (SQLite, CoreData)
-    - Remote data (HTTP, Parse.com)
-  - Lifecycle
-- **Third week**:
-  - Graphics and animations
-  - Touch and gestures
-  - Device API
 
-- Full topics schedule can be found [here](https://github.com/TelerikAcademy/Mobile-Applications-for-iOS/blob/master/README.md)
+- Full topics schedule can be found [here](https://github.com/TelerikAcademy/Mobile-Applications-with-NativeScript/blob/master/SCHEDULE.md)
 
 <!-- section start -->
 <!-- attr: {class: 'slide-section', id: 'trainers', showInPresentation: true} -->
-<!-- # The Trainers Team
-##  Or the trainer-team? -->
+<!-- # The Trainers Team-->
 
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # The Trainers Team
@@ -83,6 +77,31 @@
 	-   Blog: <a href="http://minkov.it" title="http://minkov.it" target="\_blank">http://minkov.it</a>
 	-   GitHub: <a href="https://github.com/Minkov" title="https://github.com/Minkov" target="\_blank">https://github.com/Minkov</a>
 
+# The Trainers Team
+<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/kristiyan-tsaklev.jpg" style="float:right" height="230" />
+-   **Kristiyan Tsaklev**
+    -   Technical Trainer @ Telerik Academy
+    -   Champion in national and international <br/>
+        Informatics competitions
+    -   Student in Sofia University (Computer Science)
+    -   E-mail: kristian.tsuklev [at] telerik.com
+    -   GitHub: <a href="https://github.com/cuklev" target="\_blank">https://github.com/cuklev</a>   
+
+# The Trainers Team
+<img src="https://avatars3.githubusercontent.com/u/3620516" style="float:right" height="230" />
+-   **Martin Vesheff**
+    -   Technical Trainer @ Telerik Academy
+    -   Student in the sixth season of Telerik Software Academy
+    -   E-mail: martin.vesheff [at] telerik.com
+    -   GitHub: <a href="https://github.com/vesheff" target="\_blank">https://github.com/vesheff</a>   
+
+# The Trainers Team
+<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/plamen-petkov.jpg" style="float:right" height="230" />
+-   **Plamen Petkov**
+    -   Android developer @ Telerik
+    - Graduate from the fifth season <br/>
+    of Telerik Software Academy
+
 <!-- section start -->
 <!-- attr: {id: 'evaluation', class: 'slide-section', showInPresentation: true } -->
 <!-- # Course Evaluation -->
@@ -91,8 +110,8 @@
 # Course Evaluation
 - Course Evaluation
   - **Course project** – 85%
-  - **Homework** – 5%
-    - **Homework evaluation** – 5%
+  - **Attendance** – 5%
+    - **Attendance at workshops** – 5%
   - **Forums activity** – up to 5%
 
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
@@ -119,23 +138,25 @@
 	-	Discuss the course exercises with your colleagues
 	-	Find solutions for the exercises
 	-	Share source code / discuss ideas
--	The course official [web site](http://academy.telerik.com/student-courses/software-technologies/iphone-and-ipad-mobile-apps/about)
+-	The course official [web site](XXX)
 -	The Telerik Integrated Learning System ([TILS](http://www.telerikacademy.com))
 	-	Important resource for all students
 	-	Homework submissions / peer reviews
 	-	Presence cards with barcode
 	-	Reports about your results
--	[Course site](http://telerikacademy.com/Courses/Courses/Details/311)
+-	[Course site](XXX)
 
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # Required Software
 -	Software needed for this course:
   - Operating System
-    - MAC OS X El Capitane or Yosemite
-  - **xCode** or AppCode
+        - Windows 8, 10 with Android Emulator or Android Device
+        - GNU/Linux with Android Emulator or Android Device
+        - MAC OS X El Capitane or Yosemite
+  - Telerik App Builder or any text editor with NativeScript CLI
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section',showInPresentation: true } -->
 # Questions
-## Mobile Applications for iPhone and iPad
-[link to the forum](http://telerikacademy.com/Forum/Category/62/ios-mobile-apps)
+## Mobile Applications with NativeScript
+[link to the forum](XXX)
