@@ -17,14 +17,13 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', id:'coming-next', showInPresentation: true } -->
-<!-- # Telerik Platform
-## Page management -->
+<!-- # Page management -->
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
 # Page management
 
-- Apps consist of pages which represents the different application screens.
-- The pages are instances of the class page from the Page module.
+- Apps consist of pages which represents the different application screens
+- The pages are instances of the class page from the Page module
 
 ```js
 <!-- page-common.js -->
@@ -37,7 +36,7 @@ var Page = (function (_super) {
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
 # Page management
-- Each class instance inherits the content property which holds the root visual element of the UI.
+- Each class instance inherits the content property which holds the root visual element of the UI
 
 ```js
 <!-- content-view.js -->
@@ -51,6 +50,9 @@ var ContentView = (function (_super) {
 })(view.CustomLayoutView);
 exports.ContentView = ContentView;
 ```
+<!-- section start -->
+<!-- attr: { class:'slide-section', id:'coming-next', showInPresentation: true } -->
+<!-- # Creating pages -->
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
 # Create pages
@@ -106,14 +108,87 @@ exports.createPage = createPage;
 
 - The entry point of the application
 - You will need to use the `mainModule` from the `Application module`
-- NativeScript searches for the XML file with the name specified. It is parsed and then drawn on the screen.
-- Then if a `.js` or `.ts` file exists NativeScript executes it.
+- NativeScript searches for the XML file with the name specified. It is parsed and then drawn on the screen
+- Then if a `.js` or `.ts` file exists NativeScript executes it
 
 ```js
 <!-- Loading main page -->
 var application = require("application");
 application.mainModule = "main-page";
 application.start();
+```
+
+<!-- section start -->
+<!-- attr: { id:'questions', class:'slide-section',showInPresentation: true } -->
+<!-- # Creating pages
+## Demo -->
+
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation: true } -->
+<!-- # Navigation -->
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation
+
+- The `Frame` class is responsible for navigation between pages
+- Every application has one frame at root level - the `topmost` frame
+- The `topmost` frame provides a method called `navigate`. It provides navigation between pages
+
+```js
+var frameModule = require("ui/frame");
+var topmost = frameModule.topmost();
+```
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation
+- The `Page` class instance
+    - It carries information about the frame object which navigated to it in the `frame` property
+    - You can navigate with the `frame` property as well
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation types
+## Navigate by Page Name
+
+- The simplest way to Navigate
+    - Just pass page name in the topmost object
+        - You should be careful with the name provided.
+
+```js
+topmost.navigate("details-page");
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation types
+## Navigate with Function
+
+- The function returns the instance of the page you want to navigate to.
+
+```js
+var factoryFunc = function () {
+    var label = new labelModule.Label();
+    label.text = "Hello, world!";
+    var page = new pagesModule.Page();
+    page.content = label;
+    return page;
+};
+topmost.navigate(factoryFunc);
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation types
+## Navigate and Pass Context
+
+- You can pass context to the page with a NavigationEntry object.
+    - Finer control over navigation compared to other navigation approaches.
+    - You can also animate the navigation.
+
+```js
+var navigationEntry = {
+    moduleName: "details-page",
+    context: {info: "something you want to pass to your page"},
+    animated: false
+};
+topmost.navigate(navigationEntry);
 ```
 
 
