@@ -155,14 +155,23 @@ camera.takePicture()
   - Used for data binding
 
 ```js
-var observable = require("data/observable");
+var observable = require("data/observable").Observable;
 
-var person = new observable.Observable({
+var viewModel = new observable({
 	/* properties */
+});
+
+viewModel.addEventListener(observable.propertyChangeEvent, function(pcd) {
+	console.log(pcd.eventName.toString() + " "
+		+ pcd.propertyName.toString() + " "
+		+ pcd.value.toString());
 });
 ```
 
-<!-- TODO: more examples -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- Data Modules -->
+## Live demo
+
 <!-- TODO: UI and other modules -->
 
 <!-- section start -->
