@@ -4,7 +4,7 @@
 ## Wednesday 10 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
 |:-------------------------------|:----------------------------------------------------------------|:----------|:---------|:--------|
-| Course Introduction            | Introduction to the course, trainers, examination, projects.    |           |          | Doncho  |
+| Course Introduction            | Introduction to the course, trainers, examination, projects.    | 14:00     |          | Doncho  |
 | Setup NativeScript Environment | Setting up Android/iOS environment for NativeScript.            |           |          | Marto   |
 | Application architecture       | Page management and navigation.                                 |           |          | Marto   |
 
