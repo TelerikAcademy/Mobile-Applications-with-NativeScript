@@ -6,6 +6,6 @@
     }
   },
   "dependencies": {
-    "tns-core-modules": "1.5.2"
+    "tns-core-modules": "^1.5.2"
   }
 }

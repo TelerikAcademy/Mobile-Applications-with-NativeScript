@@ -115,7 +115,7 @@ tns doctor
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation: true } -->
-<!-- # Cuki Setup-->
+<!-- # Linux Setup-->
 
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->

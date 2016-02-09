@@ -1,4 +1,4 @@
 var application = require("application");
-application.mainModule = "main-page";
+application.mainEntry = "./views/main/main-page";
 application.cssFile = "./app.css";
 application.start();
