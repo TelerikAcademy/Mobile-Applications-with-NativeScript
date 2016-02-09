@@ -122,6 +122,28 @@ platform.screen.mainScreen.heightPixels
 platform.screen.mainScreen.scale
 ```
 
+<!-- attr: { showInPresentation:true } -->
+<!-- # Device Functionality Modules -->
+- `camera` module
+
+```js
+var camera = require("camera");
+
+camera.takePicture()
+  .then(function (result) {
+	// result is ImageSource
+});
+```
+
+- `location` module
+- `file-system` module
+- `fps-meter` module
+- [Other device functionality modules](https://docs.nativescript.org/core-concepts/modules#device-functionality-modules)
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- Device Functionality Modules -->
+## Live demo
+
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 # Data Modules
