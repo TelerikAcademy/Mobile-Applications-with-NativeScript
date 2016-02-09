@@ -51,9 +51,9 @@
 - **First week:**
   - Getting to know NativeScript and setup the environment
   - Application architecture
+  - Layouts and UI components
   - Modules, data-binding and events
 - **Second week:**
-  - Layouts and UI components
   - Gestures and animations
   - Hardware and native API access
   - Working with data
@@ -77,6 +77,7 @@
 	-   Blog: <a href="http://minkov.it" title="http://minkov.it" target="\_blank">http://minkov.it</a>
 	-   GitHub: <a href="https://github.com/Minkov" title="https://github.com/Minkov" target="\_blank">https://github.com/Minkov</a>
 
+<!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # The Trainers Team
 <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/kristiyan-tsaklev.jpg" style="float:right" height="230" />
 -   **Kristiyan Tsaklev**
@@ -87,20 +88,14 @@
     -   E-mail: kristian.tsuklev [at] telerik.com
     -   GitHub: <a href="https://github.com/cuklev" target="\_blank">https://github.com/cuklev</a>   
 
+<!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # The Trainers Team
-<img src="https://avatars3.githubusercontent.com/u/3620516" style="float:right" height="230" />
+<img src="https://avatars3.githubusercontent.com/u/3620516" style="float:right" height="200" />
 -   **Martin Vesheff**
     -   Technical Trainer @ Telerik Academy
-    -   Student in the sixth season of Telerik Software Academy
+    -   Student in the sixth season of <br /> Telerik Software Academy
     -   E-mail: martin.vesheff [at] telerik.com
     -   GitHub: <a href="https://github.com/vesheff" target="\_blank">https://github.com/vesheff</a>   
-
-# The Trainers Team
-<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/plamen-petkov.jpg" style="float:right" height="230" />
--   **Plamen Petkov**
-    -   Android developer @ Telerik
-    - Graduate from the fifth season <br/>
-    of Telerik Software Academy
 
 <!-- section start -->
 <!-- attr: {id: 'evaluation', class: 'slide-section', showInPresentation: true } -->
@@ -109,9 +104,9 @@
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # Course Evaluation
 - Course Evaluation
-  - **Course project** – 85%
-  - **Attendance** – 5%
-    - **Attendance at workshops** – 5%
+  - **Course project** – 90%
+  - **Description of the course project** – 5%
+    - `The description of the course project is mandatory. If you don't send it you will not be invited to project defence.`
   - **Forums activity** – up to 5%
 
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
