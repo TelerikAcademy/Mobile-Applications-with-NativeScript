@@ -319,7 +319,69 @@ topmost.goBack();
 ```
 
 <!-- section start -->
+<!-- attr: {  class:'slide-section',showInPresentation: true } -->
+<!-- # Supporting Multiple Screens -->
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Multiple Screens Support
+
+- Mobile applications run on many different devices with different screen sizes and resolutions
+- NativeScript provides a way to define different `.js`, `.xml`, `.css` files to be loaded based on screen size
+- Using set of qulifiers added inside the file name
+
+```js
+<file-name>[.<qualifier>]*.<extension>
+```
+<!-- attr: {  class:'slide-section',showInPresentation: true } -->
+<!-- # Qualifiers -->
+
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Screen Size Qualifiers
+
+- All the values in screen size qualifiers are in density independent pixels
+    - `minWH<X>` - The smaller dimension(width or height) should be at least X dp.
+    - `minW<X>` - Width should be at least X dp.
+    - `minH<X>` - Height should be at least X dp.
+
+```
+<!-- used for tablets -->
+main-page.minWH600.xml
+```
+
+```
+<!-- used for phones -->
+main-page.xml
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Platform Qualifiers
+
+- The platform qualifiers are executed during build time, while the others - during run time
+
+- `android` – android platform
+- `ios` – iOS platform
+- `windows` (coming soon) – windows platform
+
+```
+<!-- css styles for android -->
+app.android.css
+```
+
+```
+<!-- used for ios -->
+app.ios.css
+```
+
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Orientation Qualifiers
+
+- `land` - orientation is in landscape mode
+- `port` - orientation is in portrait mode
+
+<!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section',showInPresentation: true } -->
 <!-- # Questions
 ## Mobile Applications with NativeScript -->
-[link to the forum](http://telerikacademy.com/Forum/Category/62/ios-mobile-apps)
+[link to the forum](http://telerikacademy.com/Forum/Category/70/mobile-apps-with-native-script)

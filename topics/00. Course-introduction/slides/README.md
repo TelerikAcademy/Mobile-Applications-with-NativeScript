@@ -133,13 +133,13 @@
 	-	Discuss the course exercises with your colleagues
 	-	Find solutions for the exercises
 	-	Share source code / discuss ideas
--	The course official [web site](XXX)
+-	The course official [web site](http://academy.telerik.com/student-courses/software-technologies/mobile-applications-with-nativescript/about)
 -	The Telerik Integrated Learning System ([TILS](http://www.telerikacademy.com))
 	-	Important resource for all students
 	-	Homework submissions / peer reviews
 	-	Presence cards with barcode
 	-	Reports about your results
--	[Course site](XXX)
+-	[Course site](http://telerikacademy.com/Courses/Courses/Details/316)
 
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # Required Software
@@ -149,6 +149,14 @@
         - GNU/Linux with Android Emulator or Android Device
         - MAC OS X El Capitane or Yosemite
   - Telerik App Builder or any text editor with NativeScript CLI
+
+<!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
+# Additional Resources
+- [Official Documentation](http://docs.nativescript.org/)
+- [Getting Started](http://developer.telerik.com/featured/getting-started-nativescript/)
+- [How it works](http://developer.telerik.com/featured/nativescript-works/)
+- [npm modules](https://www.npmjs.com/search?q=nativescript)
+
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section',showInPresentation: true } -->
