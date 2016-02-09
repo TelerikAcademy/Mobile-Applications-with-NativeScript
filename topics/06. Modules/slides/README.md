@@ -110,17 +110,39 @@ http.getString("https://example.org/")
 - `platform` module
 
 ```js
-var platformModule = require("platform");
+var platform = require("platform");
 
-console.log("Device model: " + platformModule.device.model);
-console.log("Device type: " + platformModule.device.deviceType);
-console.log("OS: " + platformModule.device.os);
-console.log("OS version: " + platformModule.device.osVersion);
-console.log("SDK Version: " + platformModule.device.sdkVersion);
-console.log("Screen width: " + platformModule.screen.mainScreen.widthPixels);
-console.log("Screen height: " + platformModule.screen.mainScreen.heightPixels);
-console.log("Screen scale: " + platformModule.screen.mainScreen.scale);
+platform.device.model
+platform.device.deviceType
+platform.device.os
+platform.device.osVersion
+platform.device.sdkVersion
+platform.screen.mainScreen.widthPixels
+platform.screen.mainScreen.heightPixels
+platform.screen.mainScreen.scale
 ```
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Device Functionality Modules -->
+- `camera` module
+
+```js
+var camera = require("camera");
+
+camera.takePicture()
+  .then(function (result) {
+	// result is ImageSource
+});
+```
+
+- `location` module
+- `file-system` module
+- `fps-meter` module
+- [Other device functionality modules](https://docs.nativescript.org/core-concepts/modules#device-functionality-modules)
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- Device Functionality Modules -->
+## Live demo
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
@@ -133,15 +155,51 @@ console.log("Screen scale: " + platformModule.screen.mainScreen.scale);
   - Used for data binding
 
 ```js
-var observable = require("data/observable");
+var observable = require("data/observable").Observable;
 
-var person = new observable.Observable({
+var viewModel = new observable({
 	/* properties */
+});
+
+viewModel.addEventListener(observable.propertyChangeEvent, function(pcd) {
+	console.log(pcd.eventName.toString() + " "
+		+ pcd.propertyName.toString() + " "
+		+ pcd.value.toString());
 });
 ```
 
-<!-- TODO: more examples -->
-<!-- TODO: UI and other modules -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- Data Modules -->
+## Live demo
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+# UI Modules
+## Subtitle
+
+<!-- attr: { showInPresentation:true } -->
+<!-- UI Modules -->
+- module
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- UI Modules -->
+## Live demo
+
+<!-- section start -->
+<!-- attr: { class:'slide-section' } -->
+# WHATWG Polyfills
+## Subtitle
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # WHATWG Polyfills -->
+- `xhr` - the `XMLHttpRequest` polyfill
+[https://xhr.spec.whatwg.org/]()
+- `fetch` - the `Fetch` polyfill
+[https://fetch.spec.whatwg.org/]()
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- WHATWG Polyfills -->
+## Live demo
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
