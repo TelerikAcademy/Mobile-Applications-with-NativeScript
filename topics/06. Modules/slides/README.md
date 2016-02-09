@@ -110,16 +110,16 @@ http.getString("https://example.org/")
 - `platform` module
 
 ```js
-var platformModule = require("platform");
+var platform = require("platform");
 
-console.log("Device model: " + platformModule.device.model);
-console.log("Device type: " + platformModule.device.deviceType);
-console.log("OS: " + platformModule.device.os);
-console.log("OS version: " + platformModule.device.osVersion);
-console.log("SDK Version: " + platformModule.device.sdkVersion);
-console.log("Screen width: " + platformModule.screen.mainScreen.widthPixels);
-console.log("Screen height: " + platformModule.screen.mainScreen.heightPixels);
-console.log("Screen scale: " + platformModule.screen.mainScreen.scale);
+platform.device.model
+platform.device.deviceType
+platform.device.os
+platform.device.osVersion
+platform.device.sdkVersion
+platform.screen.mainScreen.widthPixels
+platform.screen.mainScreen.heightPixels
+platform.screen.mainScreen.scale
 ```
 
 <!-- section start -->
