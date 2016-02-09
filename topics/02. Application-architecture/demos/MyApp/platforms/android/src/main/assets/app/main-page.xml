@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" navigatedTo="onNav">
+    <StackLayout>
+        <Label text="Tap the button" class="title" />
+        <Button id="btn-tap" text="TAP" tap="tapAction" />
+        <Label text="{{ message }}" class="message" textWrap="true" />
+
+        <Button text="Navigate by Page Name" tap="navWithPageName" class="btn-mine"/>
+        <Button text="Navigate with Function" tap="navWithFunc" class="btn-mine"/>
+        <Button text="Navigate with Context" tap="navWithContext" class="btn-mine"/>
+
+    </StackLayout>
+</Page>
