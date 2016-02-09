@@ -1,19 +1,40 @@
 {
-  "name": "tns-core-modules",
-  "description": "Telerik NativeScript Core Modules",
-  "version": "1.5.2",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NativeScript/NativeScript/commit/70728c4442d9bc78a88c43493e8b3522d0cbb141"
-  },
-  "files": [
-    "**/*.*",
-    "**/*",
-    "!.baseDir.*",
-    "!node-tests/",
-    "!apps/"
+  "_args": [
+    [
+      "tns-core-modules@latest",
+      "C:\\Users\\mvesheff\\Desktop\\MyApp"
+    ]
   ],
-  "license": "Apache-2.0",
+  "_from": "tns-core-modules@latest",
+  "_id": "tns-core-modules@1.5.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tns-core-modules",
+  "_nodeVersion": "4.2.2",
+  "_npmUser": {
+    "email": "vladimir.enchev@gmail.com",
+    "name": "enchev"
+  },
+  "_npmVersion": "2.14.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "tns-core-modules",
+    "raw": "tns-core-modules@latest",
+    "rawSpec": "latest",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-1.5.2.tgz",
+  "_shasum": "2cd0ad96868d9f37ae751c285879e3eb6ee47644",
+  "_shrinkwrap": null,
+  "_spec": "tns-core-modules@latest",
+  "_where": "C:\\Users\\mvesheff\\Desktop\\MyApp",
+  "dependencies": {},
+  "description": "Telerik NativeScript Core Modules",
   "devDependencies": {
     "chai": "3.2.0",
     "grunt": "0.4.5",
@@ -26,30 +47,27 @@
     "grunt-shell": "1.1.2",
     "grunt-simple-mocha": "0.4.0",
     "grunt-ts": "5.0.0-beta.5",
+    "grunt-tslint": "3.0.0",
     "grunt-typedoc": "0.2.3",
     "grunt-untar": "0.0.1",
     "mocha": "2.2.5",
     "shelljs": "0.5.3",
-    "grunt-tslint": "3.0.0",
     "tslint": "3.1.1",
     "typescript": "1.7.3"
   },
-  "typings": "tns-core-modules.d.ts",
-  "_id": "tns-core-modules@1.5.2",
-  "_shasum": "2cd0ad96868d9f37ae751c285879e3eb6ee47644",
-  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-1.5.2.tgz",
-  "_from": "tns-core-modules@1.5.2",
-  "scripts": {},
-  "_npmVersion": "2.14.7",
-  "_nodeVersion": "4.2.2",
-  "_npmUser": {
-    "name": "enchev",
-    "email": "vladimir.enchev@gmail.com"
-  },
+  "directories": {},
   "dist": {
     "shasum": "2cd0ad96868d9f37ae751c285879e3eb6ee47644",
     "tarball": "http://registry.npmjs.org/tns-core-modules/-/tns-core-modules-1.5.2.tgz"
   },
+  "files": [
+    "!.baseDir.*",
+    "!apps/",
+    "!node-tests/",
+    "**/*",
+    "**/*.*"
+  ],
+  "license": "Apache-2.0",
   "maintainers": [
     {
       "name": "enchev",
@@ -84,6 +102,14 @@
       "email": "valio.stoychev@gmail.com"
     }
   ],
-  "directories": {},
-  "readme": "ERROR: No README data found!"
+  "name": "tns-core-modules",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NativeScript/NativeScript/commit/70728c4442d9bc78a88c43493e8b3522d0cbb141"
+  },
+  "scripts": {},
+  "typings": "tns-core-modules.d.ts",
+  "version": "1.5.2"
 }

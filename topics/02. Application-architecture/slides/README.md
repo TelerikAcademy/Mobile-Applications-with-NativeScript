@@ -51,7 +51,7 @@ var ContentView = (function (_super) {
 exports.ContentView = ContentView;
 ```
 <!-- section start -->
-<!-- attr: { class:'slide-section', id:'coming-next', showInPresentation: true } -->
+<!-- attr: { class:'slide-section', showInPresentation: true } -->
 <!-- # Creating pages -->
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
@@ -118,10 +118,9 @@ application.mainModule = "main-page";
 application.start();
 ```
 
-<!-- section start -->
-<!-- attr: { id:'questions', class:'slide-section',showInPresentation: true } -->
-<!-- # Creating pages
-## Demo -->
+<!-- attr: { class:'slide-section', showInPresentation: true } -->
+# Creating pages
+## Demo
 
 
 <!-- section start -->
@@ -191,6 +190,133 @@ var navigationEntry = {
 topmost.navigate(navigationEntry);
 ```
 
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation types
+## Navigate and Pass Context
+
+- When you navigate to the page you transfer information from one page to another.
+- With the onNavigatedTo callback, you show the details for the entity.
+
+```js
+function pageNavigatedTo(args) {
+    var page = args.object;
+    page.bindingContext = page.navigationContext;
+}
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation without history
+
+- You can navigate to a page without adding this navigation to the history
+- With the onNavigatedTo callback, you show the details for the entity
+- Useful if you have multiple-page authentication process
+- When the user logs in successfully and redirected to home page.
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation without history
+```js
+var navigationEntry = {
+    moduleName: "main-page",
+    clearHistory: true
+};
+topmost.navigate(navigationEntry);
+```
+
+- If `backstackVisible` property is set to false then the Page will be displayed but once navigated from it will not be able to be navigated back to
+
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation clear history
+
+- You can completely clear the entire navigation history when navigating to a page
+- This will prevent the user from going back to pages previously visited
+
+```js
+var navigationEntry = {
+    moduleName: "login-page",
+    backstackVisible: false
+};
+topmost.navigate(navigationEntry);
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation transitions
+
+- By default, all navigation will be animated and will use the default transition for the platform
+- You can control transitions with `navigationTransition` property of the `NavigationEntry` object
+
+
+```js
+var navigationEntry = {
+    moduleName: "main-page",
+    animated: true,
+    navigationTransition: {
+        transition: "slide",
+        duration: 380,
+        curve: "easeIn"
+    }
+};
+topmost.navigate(navigationEntry);
+```
+- Currently not working. In Progress...
+
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation transitions
+
+- The duration property lets you specify the transition duration in milliseconds
+    - Default values
+        - `350 ms for iOS`
+        - `300 ms for Android`
+- The curve property lets you specify the animation curve of the transition
+   - Default value
+        - `easeInOut`
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigation transitions
+
+- Set default transition for all `frame` animations
+
+```js
+topmost.navigationTransition = { transition: "flip" };
+```
+
+- Set default transition for entire application
+
+```js
+var frameModule = require("ui/frame");
+frameModule.Frame.defaultNavigationTransition = { transition: "fade" };
+```
+
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->
+# Navigation transitions
+
+- Navigation types
+    - `curl` (same as curlUp) (iOS only)
+    - `curlUp` (iOS only)
+    - `curlDown` (iOS only)
+    - `explode` (Android Lollipop an later)
+    - `fade`
+    - `flip` (same as flipRight)
+    - `flipRight`
+    - `flipLeft`
+    - `slide` (same as slideLeft)
+    - `slideLeft`
+    - `slideRight`
+    - `slideTop`
+    - `slideBottom`
+
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Navigating back
+
+- The topmost frame tracks the pages the user has visited
+- To go back to a previous page, you need to use the goBackMethod of the topmost frame instance.
+
+```js
+topmost.goBack();
+```
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section',showInPresentation: true } -->

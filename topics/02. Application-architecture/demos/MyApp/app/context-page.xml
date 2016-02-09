@@ -1,6 +1,0 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
-    <StackLayout>
-        <Label text="Nav with Context" textWrap="true" class="title" />
-        <Label text="{{ info }}" textWrap="true" class="message"/>
-    </StackLayout>
-</Page>
