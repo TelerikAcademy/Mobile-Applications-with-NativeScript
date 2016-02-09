@@ -172,7 +172,34 @@ viewModel.addEventListener(observable.propertyChangeEvent, function(pcd) {
 <!-- Data Modules -->
 ## Live demo
 
-<!-- TODO: UI and other modules -->
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+# UI Modules
+## Subtitle
+
+<!-- attr: { showInPresentation:true } -->
+<!-- UI Modules -->
+- module
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- UI Modules -->
+## Live demo
+
+<!-- section start -->
+<!-- attr: { class:'slide-section' } -->
+# WHATWG Polyfills
+## Subtitle
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # WHATWG Polyfills -->
+- `xhr` - the `XMLHttpRequest` polyfill
+[https://xhr.spec.whatwg.org/]()
+- `fetch` - the `Fetch` polyfill
+[https://fetch.spec.whatwg.org/]()
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- WHATWG Polyfills -->
+## Live demo
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
