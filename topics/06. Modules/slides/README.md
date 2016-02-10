@@ -177,9 +177,55 @@ viewModel.addEventListener(observable.propertyChangeEvent, function(pcd) {
 # UI Modules
 ## Subtitle
 
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # UI Modules -->
+- `ui/frame` - **Frame** class
+
+```js
+var frameModule = require("ui/frame");
+var topmost = frameModule.topmost();
+```
+
+- `ui/page` - **Page** class
+
+```xml
+<Page loaded="pageLoaded">
+  <Label text="{{ name }}" />
+</Page>
+```
+
 <!-- attr: { showInPresentation:true } -->
-<!-- UI Modules -->
-- module
+<!-- # UI Modules -->
+- `color` - create colors, style the UI
+
+```js
+var colorModule = require("color");
+var Color = colorModule.Color;
+
+var red = new Color("#FF0000");
+var green = new Color("#0F0");
+var transparentBlue = new Color(127, 0, 0, 255);
+```
+
+- `text/formatted-string`
+- `xml` - **XmlParser** class
+- `ui/styling`
+- `ui/animation`
+
+<!-- attr: { showInPresentation:true, style:'font-size:40px' } -->
+<!-- # UI Modules -->
+- Layouts
+  - `ui/layouts/stack-layout`
+  - `ui/layouts/grid-layout`
+  - `ui/layouts/absolute-layout`
+  - `ui/layouts/wrap-layout`
+- Widgets
+  - `ui/button`
+  - `ui/label`
+  - `ui/text-field`
+  - `ui/text-view`
+  - `ui/image`
+- [Other UI Modules](https://docs.nativescript.org/core-concepts/modules#user-interface-modules)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- UI Modules -->
