@@ -23,7 +23,6 @@
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 # Core Modules
-## Subtitle
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Core Modules -->
@@ -97,13 +96,12 @@ http.getString("https://example.org/")
   - `connectivity` module - check for internet connection
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- Core Modules -->
+<!-- # Core Modules -->
 ## Live demo
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 # Device Functionality Modules
-## Subtitle
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Device Functionality Modules -->
@@ -141,13 +139,12 @@ camera.takePicture()
 - [Other device functionality modules](https://docs.nativescript.org/core-concepts/modules#device-functionality-modules)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- Device Functionality Modules -->
+<!-- # Device Functionality Modules -->
 ## Live demo
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 # Data Modules
-## Subtitle
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Data Modules -->
@@ -169,26 +166,70 @@ viewModel.addEventListener(observable.propertyChangeEvent, function(pcd) {
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- Data Modules -->
+<!-- # Data Modules -->
 ## Live demo
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 # UI Modules
-## Subtitle
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # UI Modules -->
+- `ui/frame` - **Frame** class
+
+```js
+var frameModule = require("ui/frame");
+var topmost = frameModule.topmost();
+```
+
+- `ui/page` - **Page** class
+
+```xml
+<Page loaded="pageLoaded">
+  <Label text="{{ name }}" />
+</Page>
+```
 
 <!-- attr: { showInPresentation:true } -->
-<!-- UI Modules -->
-- module
+<!-- # UI Modules -->
+- `color` - create colors, style the UI
+
+```js
+var colorModule = require("color");
+var Color = colorModule.Color;
+
+var red = new Color("#FF0000");
+var green = new Color("#0F0");
+var transparentBlue = new Color(127, 0, 0, 255);
+```
+
+- `text/formatted-string`
+- `xml` - **XmlParser** class
+- `ui/styling`
+- `ui/animation`
+
+<!-- attr: { showInPresentation:true, style:'font-size:40px' } -->
+<!-- # UI Modules -->
+- Layouts
+  - `ui/layouts/stack-layout`
+  - `ui/layouts/grid-layout`
+  - `ui/layouts/absolute-layout`
+  - `ui/layouts/wrap-layout`
+- Widgets
+  - `ui/button`
+  - `ui/label`
+  - `ui/text-field`
+  - `ui/text-view`
+  - `ui/image`
+- [Other UI modules](https://docs.nativescript.org/core-concepts/modules#user-interface-modules)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- UI Modules -->
+<!-- # UI Modules -->
 ## Live demo
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
 # WHATWG Polyfills
-## Subtitle
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # WHATWG Polyfills -->
@@ -198,7 +239,7 @@ viewModel.addEventListener(observable.propertyChangeEvent, function(pcd) {
 [https://fetch.spec.whatwg.org/]()
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- WHATWG Polyfills -->
+<!-- # WHATWG Polyfills -->
 ## Live demo
 
 <!-- section start -->
