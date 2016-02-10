@@ -20,7 +20,5 @@ var tapAction = function() {
   return tapAction;
 };
 
-
-
 exports.mainViewModel = HelloWorldModel;
 exports.tapAction = tapAction;
