@@ -97,7 +97,7 @@ http.getString("https://example.org/")
   - `connectivity` module - check for internet connection
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- Core Modules -->
+<!-- # Core Modules -->
 ## Live demo
 
 <!-- section start -->
@@ -141,7 +141,7 @@ camera.takePicture()
 - [Other device functionality modules](https://docs.nativescript.org/core-concepts/modules#device-functionality-modules)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- Device Functionality Modules -->
+<!-- # Device Functionality Modules -->
 ## Live demo
 
 <!-- section start -->
@@ -169,7 +169,7 @@ viewModel.addEventListener(observable.propertyChangeEvent, function(pcd) {
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- Data Modules -->
+<!-- # Data Modules -->
 ## Live demo
 
 <!-- section start -->
@@ -228,7 +228,7 @@ var transparentBlue = new Color(127, 0, 0, 255);
 - [Other UI Modules](https://docs.nativescript.org/core-concepts/modules#user-interface-modules)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- UI Modules -->
+<!-- # UI Modules -->
 ## Live demo
 
 <!-- section start -->
@@ -244,7 +244,7 @@ var transparentBlue = new Color(127, 0, 0, 255);
 [https://fetch.spec.whatwg.org/]()
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- WHATWG Polyfills -->
+<!-- # WHATWG Polyfills -->
 ## Live demo
 
 <!-- section start -->
