@@ -11,10 +11,10 @@
 ## Thursday 11 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
 |:-------------------------------|:----------------------------------------------------------------|:----------|:---------|:--------|
-| UI Components                  | Button, Label, Views, etc...                                    | 11:00     |          |  Marto  |
-| Layouts                        | Layout process, layout paddings and predefined layouts.         | 14:00     |          |  Marto  |
-| Styling                        | Using CSS and currently supported properties and selectors.     | 15:30     |          |  Marto  |
-| **Workshop**                   |                                                                 | 17:00     |          | Anyone  |
+| UI Components                  | Button, Label, Views, etc...                                    | 13:00     |          |  Marto  |
+| Layouts                        | Layout process, layout paddings and predefined layouts.         |           |          |  Marto  |
+| Styling                        | Using CSS and currently supported properties and selectors.     |           |          |  Marto  |
+| **Workshop**                   |                                                                 |           |          | Anyone  |
 
 ## Friday 12 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
