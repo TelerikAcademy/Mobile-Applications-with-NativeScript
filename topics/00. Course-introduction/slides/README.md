@@ -68,7 +68,7 @@
 # The Trainers Team
 <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/doncho-minkov.jpg" style="float:right" height="230" />
 -   **Doncho Minkov**
-	-   Senior Technical Trainer @ Telerik Academy
+	-   Principal Technical Trainer @ Telerik Academy
 	-   Contestant in the Informatics competitions
 	-   Champion from Telerik Software Academy
 	-   Experience with Web and Mobile apps
