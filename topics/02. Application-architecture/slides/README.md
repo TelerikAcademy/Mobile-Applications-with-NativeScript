@@ -1,6 +1,7 @@
 <!-- section start -->
 <!-- attr: { id:'title', class:'slide-title', hasScriptWrapper:true } -->
 # Application Architecture
+## Telerik NativeScript
 
 <div class="signature">
     <p class="signature-course">Mobile Applications with NativeScript</p>
