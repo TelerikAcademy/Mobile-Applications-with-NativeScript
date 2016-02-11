@@ -1,0 +1,23 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd">
+    <DockLayout stretchLastChild="true">
+ 
+        <StackLayout>
+            <Label text="Lobster Font" class="normal Lobster" textWrap="true"/>
+            <Label text="Indie Flower" class="normal IndieFlower" textWrap="true"/>
+            <Label text="Josefin Sans" class="normal JosefinSans" textWrap="true"/>
+            <StackLayout orientation="horizontal">
+                <Label text="Material DesignGoogle" class="normal"/>
+                <Label text="&#xe859;"  class="larger Material"/>
+            </StackLayout>
+            <StackLayout orientation="horizontal">
+                <Label text="Font Awesome I" class="normal"/>
+                <Label text=" &#xf17b; "  class="larger FontAwesome"/>
+            </StackLayout>
+            <StackLayout orientation="horizontal">
+                <Label text="Material Design Iconic" class="normal"/>
+                <Label text="&#xf33b;" class="larger MaterialIconic"/>
+            </StackLayout>
+
+        </StackLayout>
+    </DockLayout>
+</Page>

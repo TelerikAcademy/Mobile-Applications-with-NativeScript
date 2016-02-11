@@ -12,376 +12,539 @@
 <!-- section start -->
 <!-- attr: { id:'table-of-contents' } -->
 # Table of Contents
--  UI Basics
 -  UI Components
-    - Default Components
-    - Custom Components
 -  Bindings Basics
 
 <!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation: true } -->
+<!-- # UI Components -->
+
 <!-- attr: { class:'slide-section', id:'coming-next', showInPresentation: true } -->
-<!-- # Page management -->
+<!-- #The Basics -->
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# The UI Basics
+# The Basics
 
-- Apps consist of pages which represents the different application screens
-- The pages are instances of the class page from the Page module
+- The UI of your app could be implemented with separate pages for each app screen
+- Or your application could use tab view with multiple screens in one page
+- For each page you need `.xml` file for the layout
+- For each `.xml` file, NativeScript searches for `.js` or `.ts` file for the business logic of the page
+- Each app have a Home page
+- To access variables or functions from the UI, you need to declare them in the `exports` object in the module
+
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# The Basics
+-  you can specify code files and CSS files for your `.xml` using attributes
+    - `codeFile`
+    - `cssFile`
 
 ```js
-<!-- page-common.js -->
-var content_view_1 = require("ui/content-view");
-var Page = (function (_super) {
-    __extends(Page, _super);
-    return Page;
-})(content_view_1.ContentView);
+<Page codeFile="~/your-code-file" cssFile="~/your-styles.css">
+    <StackLayout>
+     ...
+    </StackLayout>
+</Page>
 ```
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Page management
-- Each class instance inherits the content property which holds the root visual element of the UI
+# The Basics
+- Provides a wide range of built-in user interface components
+    - `layouts`
+    - `widgets`
+- When your XML files are parsed NativeScript looks for components which match a name in the module `exports`
 
 ```js
-<!-- content-view.js -->
 var view = require("ui/core/view");
-var ContentView = (function (_super) {
-    __extends(ContentView, _super);
-    function ContentView() {
+var Button = (function (_super) {
+    __extends(Button, _super);
+    function Button() {
         _super.apply(this, arguments);
     }
-    return ContentView;
-})(view.CustomLayoutView);
-exports.ContentView = ContentView;
+    return Button;
+})(view.View);
+exports.Button = Button;
 ```
-<!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation: true } -->
-<!-- # Creating pages -->
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# The Basics
+
+- Default content components
+    - pages
+    - layouts
+- These components let you arrange your your user interactive components in specific ways
+
+
+<!-- attr: { class:'slide-section', id:'coming-next', showInPresentation: true } -->
+<!-- # Widgets -->
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Create pages
-- There are two approaches of creating pages in NativeScript
+# Button
 
-- The XML way - defining UI and code separately
+- Require button module
 
-`1.` Create XML file to hold the layout of the page
+```js
+var buttonModule = require("ui/button");
+var observable = require("data/observable");
+```
+- Tap event on button
 
 ```xml
-<!-- main-page.xml-->
-<Page loaded="onPageLoaded">
-  <Label text="Hello, world!"/>
+  <Button tap="buttonTap" />
+```
+
+- Binding text property directly to model
+
+```js
+var model = new observable.Observable();
+var options = {
+    sourceProperty: "buttonTitle",
+    targetProperty: "text"
+};
+button.bind(options, model);
+model.set("buttonTitle", "Cancel");
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Label
+
+- Used for creating a lable text
+- Require label module
+
+```js
+var LabelModule = require("ui/label");
+```
+
+- Binding text property to view-model property
+
+```js
+<Label text="{{ title }}" />
+```
+
+- Creating new label and set properties
+
+```js
+var label = new LabelModule.Label();
+label.text = "Some text here";
+label.className = "myClass";
+label.id = "myId";
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Label
+
+- Binding text property of `label` to an observable model
+
+```js
+var label = new LabelModule.Label();
+var model = new observableModule.Observable();
+var bindingOptions = {
+    sourceProperty: "oldText",
+    targetProperty: "text"
+};
+label.bind(bindingOptions, model);
+sourceModel.set("oldText", "changed");
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Text field
+
+- Used for creating input field
+- Require text field module
+
+```js
+var textFieldModule = require("ui/text-field");
+```
+
+- Properties of the text field
+    - `hint` - like placeholder of input field
+    - `text` - text value of the field
+    - `secure` - hides text. Used for passwords
+
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Text view
+- Used for inputing and showing multiline text
+- Require text view module
+
+```js
+var textFieldModule = require("ui/text-view");
+```
+
+- Properties of the text field
+    - `hint` - like placeholder of input field
+    - `text` - text value of the field
+    - `editable` - makes it editable or not
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Search bar
+- The SearchBar provides a user interface for entering search queries and submitting requests to search provider
+- Require search bar module
+
+```js
+var searchBarModule = require("ui/search-bar");
+```
+
+- Events of the serach bar
+    - `submit` - submits the serach query
+    - `clear` - clears the text. When **x** is pressed or all the text is deleted
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Switch
+- Provides a two-state toggle switch with two options
+- Require switch module
+
+```js
+var switchModule = require("ui/switch");
+```
+
+- `propertyChange` event
+
+```js
+<Page>
+  <Switch propertyChange="switchPropertyChange" />
+</Page>
+```
+
+```js
+function switchPropertyChange(args) {
+    if (args.propertyName === "checked") {
+        // Your code goes here
+    }
+}
+exports.switchPropertyChange = switchPropertyChange;
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Slider
+- You can use to pick a numeric value within a configurable range
+- Require slider module
+
+```js
+var sliderModule = require("ui/slider");
+```
+
+- Slider properties
+    - `maxValue`
+    - `value`
+    - `minValue`
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Progress
+- Visual bar indicator of a progress in a operation
+- Require progress module
+
+```js
+var progressModule = require("ui/progress");
+```
+
+- Progress properties
+    - `value`
+    - `maxValue`
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Activity indicator
+- Visual spinner indicator which shows that a task is in progress
+- Require activity indicator module
+
+```js
+var activityIndicatorModule = require("ui/activity-indicator");
+```
+
+- Shows it while image is loading
+
+```js
+var image = new imageModule.Image();
+var indicator = new activityIndicatorModule.ActivityIndicator();
+indicator.width = 100;
+indicator.height = 100;
+// Bind the busy property of the indicator to the isLoading property of the image
+indicator.bind({
+    sourceProperty: "isLoading",
+    targetProperty: "busy"
+}, image);
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->
+# Image
+- Shows an image.
+- You can load the image can be from ImageSource or from URL
+- Require image module
+
+```js
+var imageModule = require("ui/image");
+```
+
+- There are 4 stretch modes for the image
+     - `none`
+    - `fill`
+    - `aspectFill`
+    - `aspectFit`
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Image
+
+- Different types of `image` load in `.xml`
+
+```xml
+<Page>
+  <StackLayout>
+     <!--Bind the image source property to view-model property -->
+     <Image src="{{ thumbnailImageUrl }}" />
+     <!--Load form image from application -->
+     <Image src="~/logo.png" stretch ="none" / >
+     <!--Load form image resource -->
+     <Image src="res://logo.png" stretch ="none" / >
+     <!--Load form image URL-->
+     <Image src="http://www.google.com/images/errors/logo_sm_2.png" stretch ="none" />
+  </StackLayout>
 </Page>
 ```
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Create pages
-
-`2.` Create js file for the code
+# List View
+- Require list view module
 
 ```js
-// main-page.js
-function onPageLoaded(args) {
-    console.log("Page Loaded");
-}
-exports.onPageLoaded = onPageLoaded;
+var listViewModule = require("ui/list-view");
 ```
+- Shows items in a vertically scrolling list
 
-
-- The two file names (.js and .xml) must match
-
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Create pages
-
-- Create a page directly in the code
-
-```js
-var pagesModule = require("ui/page");
-var labelModule = require("ui/label");
-function createPage() {
-    var label = new labelModule.Label();
-    label.text = "Hello, world!";
-    var page = new pagesModule.Page();
-    page.content = label;
-    return page;
-}
-exports.createPage = createPage;
+```xml
+<Page>
+    <ListView items="{{ myItems }}">
+    	<ListView.itemTemplate>
+    		<Label text="{{ $value }}"/>
+    	</ListView.itemTemplate>
+    </ListView>
+</Page>
 ```
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Set the Home Page
+# HTML View
 
-- The entry point of the application
-- You will need to use the `mainModule` from the `Application module`
-- NativeScript searches for the XML file with the name specified. It is parsed and then drawn on the screen
-- Then if a `.js` or `.ts` file exists NativeScript executes it
+- Represents a view with html content
+- Used for static web pages
+
+- Require html view module
 
 ```js
-<!-- Loading main page -->
-var application = require("application");
-application.mainModule = "main-page";
-application.start();
+var htmlViewModule = require("ui/html-view");
 ```
 
-<!-- attr: { class:'slide-section', showInPresentation: true } -->
-# Creating pages
-## Demo
-
-
-<!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation: true } -->
-<!-- # Navigation -->
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation
-
-- The `Frame` class is responsible for navigation between pages
-- Every application has one frame at root level - the `topmost` frame
-- The `topmost` frame provides a method called `navigate`. It provides navigation between pages
-
-```js
-var frameModule = require("ui/frame");
-var topmost = frameModule.topmost();
-```
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation
-- The `Page` class instance
-    - It carries information about the frame object which navigated to it in the `frame` property
-    - You can navigate with the `frame` property as well
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation types
-## Navigate by Page Name
-
-- The simplest way to Navigate
-    - Just pass page name in the topmost object
-        - You should be careful with the name provided.
-
-```js
-topmost.navigate("details-page");
+```xml
+<Page>
+     <HtmlView html="{{ htmlString }}" />
+</Page>
 ```
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation types
-## Navigate with Function
+# Web View
 
-- The function returns the instance of the page you want to navigate to.
+- Shows web pages
 
-```js
-var factoryFunc = function () {
-    var label = new labelModule.Label();
-    label.text = "Hello, world!";
-    var page = new pagesModule.Page();
-    page.content = label;
-    return page;
-};
-topmost.navigate(factoryFunc);
-```
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation types
-## Navigate and Pass Context
-
-- You can pass context to the page with a NavigationEntry object.
-    - Finer control over navigation compared to other navigation approaches.
-    - You can also animate the navigation.
+- Require web-view view module
 
 ```js
-var navigationEntry = {
-    moduleName: "details-page",
-    context: {info: "something you want to pass to your page"},
-    animated: false
-};
-topmost.navigate(navigationEntry);
+var webViewModule = require("ui/web-view");
 ```
 
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation types
-## Navigate and Pass Context
-
-- When you navigate to the page you transfer information from one page to another.
-- With the onNavigatedTo callback, you show the details for the entity.
-
-```js
-function pageNavigatedTo(args) {
-    var page = args.object;
-    page.bindingContext = page.navigationContext;
-}
+```xml
+<Page>
+      <WebView src="{{ someUrl | pathToLocalFile | htmlString }}" />
+</Page>
 ```
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation without history
-
-- You can navigate to a page without adding this navigation to the history
-- With the onNavigatedTo callback, you show the details for the entity
-- Useful if you have multiple-page authentication process
-- When the user logs in successfully and redirected to home page.
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation without history
-```js
-var navigationEntry = {
-    moduleName: "main-page",
-    clearHistory: true
-};
-topmost.navigate(navigationEntry);
-```
-
-- If `backstackVisible` property is set to false then the Page will be displayed but once navigated from it will not be able to be navigated back to
-
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation clear history
-
-- You can completely clear the entire navigation history when navigating to a page
-- This will prevent the user from going back to pages previously visited
-
-```js
-var navigationEntry = {
-    moduleName: "login-page",
-    backstackVisible: false
-};
-topmost.navigate(navigationEntry);
-```
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation transitions
-
-- By default, all navigation will be animated and will use the default transition for the platform
-- You can control transitions with `navigationTransition` property of the `NavigationEntry` object
-
-
-```js
-var navigationEntry = {
-    moduleName: "main-page",
-    animated: true,
-    navigationTransition: {
-        transition: "slide",
-        duration: 380,
-        curve: "easeIn"
-    }
-};
-topmost.navigate(navigationEntry);
-```
-- Currently not working. In Progress...
-
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation transitions
-
-- The duration property lets you specify the transition duration in milliseconds
-    - Default values
-        - `350 ms for iOS`
-        - `300 ms for Android`
-- The curve property lets you specify the animation curve of the transition
-   - Default value
-        - `easeInOut`
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigation transitions
-
-- Set default transition for all `frame` animations
-
-```js
-topmost.navigationTransition = { transition: "flip" };
-```
-
-- Set default transition for entire application
-
-```js
-var frameModule = require("ui/frame");
-frameModule.Frame.defaultNavigationTransition = { transition: "fade" };
-```
-
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->
-# Navigation transitions
+# Tab View
 
-- Navigation types
-    - `curl` (same as curlUp) (iOS only)
-    - `curlUp` (iOS only)
-    - `curlDown` (iOS only)
-    - `explode` (Android Lollipop an later)
-    - `fade`
-    - `flip` (same as flipRight)
-    - `flipRight`
-    - `flipLeft`
-    - `slide` (same as slideLeft)
-    - `slideLeft`
-    - `slideRight`
-    - `slideTop`
-    - `slideBottom`
+- Implements tab navigation
 
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Navigating back
-
-- The topmost frame tracks the pages the user has visited
-- To go back to a previous page, you need to use the goBackMethod of the topmost frame instance.
+- Require tab-view view module
 
 ```js
-topmost.goBack();
+var tabViewModule = require("ui/tab-view");
 ```
 
-<!-- section start -->
-<!-- attr: {  class:'slide-section',showInPresentation: true } -->
-<!-- # Supporting Multiple Screens -->
+```xml
+<Page>
+ <TabView>
+   <TabView.items>
+     <TabViewItem title="Tab 1">
+       <TabViewItem.view>
+          <Label text="Label in Tab1" />
+       </TabViewItem.view>
+     </TabViewItem>
+     <TabViewItem title="Tab 2">
+       <TabViewItem.view>
+          <Label text="Label in Tab2" />
+       </TabViewItem.view>
+     </TabViewItem>
+   </TabView.items>
+ </TabView>
+</Page>
+```
 
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Multiple Screens Support
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->
+# Segmented bar
 
-- Mobile applications run on many different devices with different screen sizes and resolutions
-- NativeScript provides a way to define different `.js`, `.xml`, `.css` files to be loaded based on screen size
-- Using set of qulifiers added inside the file name
+- Implement discrete selection
+
+- Require segmented bar module
 
 ```js
-<file-name>[.<qualifier>]*.<extension>
+var segmentedBarModule = require("ui/segmented-bar");
 ```
-<!-- attr: {  class:'slide-section',showInPresentation: true } -->
-<!-- # Qualifiers -->
 
+```xml
+<StackLayout>
+    <SegmentedBar selectedIndex="{{ selectedIndex }}">
+        <SegmentedBar.items>
+            <SegmentedBarItem title="First" />
+            <SegmentedBarItem title="Second" />
+            <SegmentedBarItem title="Third" />
+        </SegmentedBar.items>
+    </SegmentedBar>
+</StackLayout>
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->
+# Date and time pickers
+
+- Lets you choose a date
+
+- Require date picker module
+
+```js
+var datePickerModule = require("ui/date-picker");
+```
+
+
+```xml
+ <DatePicker day="11" month="2" year="2016"></DatePicker>
+```
+
+- Require time picker module
+
+```js
+var timePickerModule = require("ui/time-picker");
+```
+
+```xml
+ <TimePicker hour="12" minute="00"></TimePicker>
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->
+# List picker
+
+- You can pick value from a list
+
+- Require date picker module
+
+```js
+var listPickerModule = require("ui/list-picker");
+```
+
+
+```xml
+  <ListPicker items="{{ myItems }}" selectedIndex=""></ListPicker>
+```
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Screen Size Qualifiers
+# Dialogs
 
-- All the values in screen size qualifiers are in density independent pixels
-    - `minWH<X>` - The smaller dimension(width or height) should be at least X dp.
-    - `minW<X>` - Width should be at least X dp.
-    - `minH<X>` - Height should be at least X dp.
+- Lets you create different types of dialogs
 
-```
-<!-- used for tablets -->
-main-page.minWH600.xml
+- Require date picker module
+    - `Alert`
+    - `Confirm`
+    - `Prompt`
+    - `Login`
+    - `Action`
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->
+# Dialogs
+
+- Alert
+
+```js
+dialogs.alert({
+  title: "Your title",
+  message: "Your message",
+  okButtonText: "Your button text"
+}).then(function () {
+  console.log("Dialog closed!");
+});
 ```
 
-```
-<!-- used for phones -->
-main-page.xml
+- Confirm
+
+```js
+dialogs.confirm({
+  title: "Your title",
+  message: "Your message",
+  okButtonText: "Your button text",
+  cancelButtonText: "Cancel text",
+  neutralButtonText: "Neutral text"
+}).then(function (result) {
+  // result argument is boolean
+  console.log("Dialog result: " + result);
+});
 ```
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Platform Qualifiers
+# Dialogs
 
-- The platform qualifiers are executed during build time, while the others - during run time
+- Prompt
 
-- `android` – android platform
-- `ios` – iOS platform
-- `windows` (coming soon) – windows platform
-
+```js
+dialogs.prompt({
+  title: "Your title",
+  message: "Your message",
+  okButtonText: "Your button text",
+  cancelButtonText: "Cancel text",
+  neutralButtonText: "Neutral text",
+  defaultText: "Default text",
+  inputType: dialogs.inputType.password
+}).then(function (r) {
+  console.log("Dialog result: " + r.result + ", text: " + r.text);
+});
 ```
-<!-- css styles for android -->
-app.android.css
-```
-
-```
-<!-- used for ios -->
-app.ios.css
-```
-
 
 <!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
-# Orientation Qualifiers
+# Dialogs
+- Login
 
-- `land` - orientation is in landscape mode
-- `port` - orientation is in portrait mode
+```js
+dialogs.login({
+  title: "Your title",
+  message: "Your message",
+  okButtonText: "Your button text",
+  cancelButtonText: "Cancel button text",
+  neutralButtonText: "Neutral button text",
+  userName: "User name label text",
+  password: "Password label text"
+}).then(function (r) {
+  console.log("Dialog result: " + r.result + ", user: " + r.userName + ", pwd: " + r.password);
+});
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 40px;' } -->
+# Dialogs
+
+- Action
+
+```js
+dialogs.action({
+  message: "Your message",
+  cancelButtonText: "Cancel text",
+  actions: ["Option1", "Option2"]
+}).then(function (result) {
+  console.log("Dialog result: " + result)
+});
+```
+
+
+
+
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section',showInPresentation: true } -->

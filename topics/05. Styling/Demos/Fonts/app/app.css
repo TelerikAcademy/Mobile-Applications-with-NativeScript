@@ -1,0 +1,41 @@
+﻿.normal {
+    font-size: 14;
+    horizontal-align: center;
+    margin: 10;
+}
+
+.copyright {
+    font-size: 14;
+    margin: 10;
+}
+
+.Lobster {
+    font-family:Lobster-Regular;
+}
+
+.IndieFlower {
+    font-family:IndieFlower;
+}
+
+.JosefinSans {
+    font-family:JosefinSans-Regular,Josefin Sans;
+}
+
+.Material {
+    font-family: MaterialIcons-Regular, Material Icons;
+}
+
+.FontAwesome {
+    font-family: FontAwesome;
+}
+
+.MaterialIconic {
+    font-family: Material-Design-Iconic-Font;
+}
+
+.larger {
+    font-size: 24;
+    horizontal-align: center;
+    margin: 10;
+
+}
