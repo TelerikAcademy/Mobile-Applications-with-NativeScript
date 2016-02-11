@@ -1,6 +1,6 @@
 <!-- section start -->
 <!-- attr: { id:'title', class:'slide-title', hasScriptWrapper:true } -->
-# Layouts
+# Styling
 ## Telerik NativeScript
 
 <div class="signature">
