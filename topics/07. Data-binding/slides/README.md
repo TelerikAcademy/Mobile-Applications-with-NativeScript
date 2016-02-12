@@ -117,19 +117,31 @@ funtion pageLoaded(args) {
 </Page>
 ```
 
-<!-- attr: {} -->
-# Binding to a Parent Binding Context
-- Bullet
-
 <!-- section start -->
-<!-- attr: {} -->
+<!-- attr: { class:'slide-section' } -->
 # Using Expressions for Binding
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Using Expressions for Binding -->
 - Some javascript expressions are supported inside `{{ }}`
   - property access
   - array access
   - operators - unary, binary, logical, comparison, ternary
   - function calls
   - filters
+
+<!-- section start -->
+<!-- attr: { class:'slide-section' } -->
+# Stop Binding
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Stop Binding -->
+- The need to stop a binding is rare
+  - But it may be needed
+
+```js
+targetTextField.unbind("text");
+```
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
