@@ -9,7 +9,6 @@
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
-
 <!-- section start -->
 <!-- attr: { id:'table-of-contents', style:'font-size:38px' } -->
 # Table of Contents
@@ -30,17 +29,21 @@
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 # Data Flow Direction
-
-- One-Way
-- Two-Way
+- **One-Way**
+  - Ensures that the target property updates
+  - UI modifications will not update the code
+- **Two-Way**
+  - Ensures reflection of changes in both directions
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 # Creating a binding
-## Subtitle
+## Observable class
 
 <!-- attr: {} -->
 # Two-Way Binding in Code
+- `data/observable` is used for the **source** side
+
 ```js
 var observableModule = require("data/observable");
 var source = new observableModule.Observable();
@@ -49,6 +52,8 @@ source.textSource = "Text set via twoWay binding";
 
 <!-- attr: {} -->
 # Binding in XML
+- `{{ }}` are used for the **target** side
+
 ```xml
 <Page>
   <StackLayout>
@@ -60,23 +65,71 @@ source.textSource = "Text set via twoWay binding";
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 # Binding source
-## Subtitle
+## Attaching to the target
 
 <!-- attr: {} -->
 # Binding to a Property
-- Bullet
+- `Observable` class can be bound by setting its `bindingContext` property
+  - to the page
+  - to the layout (`StackLayout`)
+
+```js
+funtion pageLoaded(args) {
+  var page = args.object;
+  page.bindingContext = source;
+}
+```
 
 <!-- attr: {} -->
 # Binding to an Event in XML
-- Bullet
+```xml
+<Page>
+  <StackLayout>
+    <Button text="Test Button For Binding" tap="{{ onTap }}" />
+  </StackLayout>
+</Page>
+```
 
 <!-- attr: {} -->
 # Binding to a Plain Object
-- Bullet
+```xml
+<Page>
+  <StackLayout>
+    <Label text="{{ title }}" class="title" />
+    <Label text="{{ message }}" />
+  </StackLayout>
+</Page>
+```
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Binding to a Plain Object -->
+- Arrays and objects can also be bound
+
+```xml
+<Page>
+  <StackLayout>
+    <ListView items="{{ items }}" height="200">
+      <ListView.itemTemplate>
+        <Label text="{{ $value }}" />
+      </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
+</Page>
+```
 
 <!-- attr: {} -->
 # Binding to a Parent Binding Context
 - Bullet
+
+<!-- section start -->
+<!-- attr: {} -->
+# Using Expressions for Binding
+- Some javascript expressions are supported inside `{{ }}`
+  - property access
+  - array access
+  - operators - unary, binary, logical, comparison, ternary
+  - function calls
+  - filters
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
