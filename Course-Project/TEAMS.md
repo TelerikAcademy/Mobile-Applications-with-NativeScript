@@ -1,8 +1,8 @@
 # Teams
 ##  Mobile Applications with NativeScript 
 
-| Member 1            | Member 2       |
-| ------------------- | -------------- |
+| Member 1            | Member 2       | Member 3 |
+| ------------------- | -------------- | -------- |
 | cecunqk             | skillet75      |
 | BaSk3T              | dsd321         |
 | zvet80              |  emcako        |
@@ -20,4 +20,4 @@
 | zdzdz               | YordanGergov   |
 | anarhist_hristov    | stellaval      |
 | martin.apostolov.35 | Obelixx        |
-| argidux avalkov     | nelfurion      |
+| argidux             | avalkov        | nelfurion |
