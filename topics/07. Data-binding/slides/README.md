@@ -50,7 +50,7 @@ var source = new observableModule.Observable();
 source.textSource = "Text set via twoWay binding";
 ```
 
-<!-- attr: {} -->
+<!-- attr: { hasScriptWrapper:true } -->
 # Binding in XML
 - `{{ }}` are used for the **target** side
 
@@ -67,7 +67,7 @@ source.textSource = "Text set via twoWay binding";
 # Binding source
 ## Attaching to the target
 
-<!-- attr: {} -->
+<!-- attr: { hasScriptWrapper:true } -->
 # Binding to a Property
 - `Observable` class can be bound by setting its `bindingContext` property
   - to the page
@@ -80,18 +80,21 @@ funtion pageLoaded(args) {
 }
 ```
 
-<!-- attr: {} -->
+<!-- attr: { hasScriptWrapper:true } -->
 # Binding to an Event in XML
+
 ```xml
 <Page>
   <StackLayout>
-    <Button text="Test Button For Binding" tap="{{ onTap }}" />
+    <Button text="Test Button For Binding"
+          tap="{{ onTap }}" />
   </StackLayout>
 </Page>
 ```
 
-<!-- attr: {} -->
+<!-- attr: { hasScriptWrapper:true } -->
 # Binding to a Plain Object
+
 ```xml
 <Page>
   <StackLayout>
@@ -101,7 +104,7 @@ funtion pageLoaded(args) {
 </Page>
 ```
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Binding to a Plain Object -->
 - Arrays and objects can also be bound
 
