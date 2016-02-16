@@ -1,14 +1,13 @@
 # Mobile Applications for iOS
 ##  Creating Line-of-business (LoB) Application
 
-Design and implement a native mobile application for **iOS**. The application should be **touch-friendly** and should provide **actual functionality** which users can take advantage of. That is, the application must be of value to the end user of a tablet or smartphone, enabling them to consume/produce real content. **DO NOT make an application for imaginary or unrealistic tasks**
+Design and implement a native mobile application for **Android or iOS with NativeScript**. The application should be **touch-friendly** and should provide **actual functionality** which users can take advantage of. That is, the application must be of value to the end user of a tablet or smartphone, enabling them to consume/produce real content. **DO NOT make an application for imaginary or unrealistic tasks**
 
 ##  Requirements:
 
 ### Creativity
 
 - You application should not be regular blog app or news feed
-
 - **Up to 10 points**
 
 ### Value to the end user
@@ -18,17 +17,18 @@ Design and implement a native mobile application for **iOS**. The application sh
   - Develop something you will use
 - **Up to 15 points**
 
-### Use custom Views
+### Use at least 3 external npm modules
 
-- **Up to 7 points**
+- **Up to 5 points**
+
 
 ### Use animations
 
-- **Up to 6 points**
+- **Up to 9 points**
 
 ### Device APIs
 
-- Use four of the following device APIs:
+- Use at least  **two** of the following device APIs:
   - Accelerometer
   - Camera
   - Compass
@@ -40,30 +40,26 @@ Design and implement a native mobile application for **iOS**. The application sh
 
 - **Up to 10 points**
 
-### Application Storage (SQLite)
+### Application Storage(SQLite) or File System Storage
 
-- **Up to 5 points**
+- **Up to 8 points**
 
 ### Remote data
 
 - Use some kind of remote data
   - It can be, but not limited to, one of the following:
     - Telerik backend services
-    - Parse.com
     - WebAPI RESTful API
     - JAX-RS RESTful API
     - Node.js RESTful API
 - **Up to 5 points**
-
-### Background tasks
-
-- **Up to 6 points**
 
 ### Touch friendly UI
 
 - Touch friendly UI. Fulfill the criteria:
   - Usable UI
   - Fluent user experience
+- **Up to 5 points**
 
 ### Notifications
 
@@ -72,23 +68,29 @@ Design and implement a native mobile application for **iOS**. The application sh
   - Error message on error
   - Success on success
   - Show messages when the state of the app changes
-- **Up to 9 points**
+- **Up to 11 points**
 
 ### Gestures
 
 - Use at least **four** of the following gestures:
-  - Swipe
-  - Fling
-  - Pinch close or pinch open
-  - Long press
-  - Touch or double touch
-  - Double touch drag
+    - Tap
+    - Double Tap
+    - Long Press
+    - Swipe
+    - Pan
+    - Pinch
+    - Rotation
 - **Up to 9 points**
 
-### High-quality code and reusability
+### Abstraction and reusability
 - The application code must be separated into consistent and cohesive modules
 - The modules must follow the best practices for developing applications
+- Use MVVM Pattern
 - **Up to 6 points**
+
+### Max 5 errors on JSHint
+
+**Up to 3 points**
 
 ### Validation and Error handling
 - Validation of user input

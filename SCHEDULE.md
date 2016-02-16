@@ -33,7 +33,7 @@
 ## Tuesday 16 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
 |:-------------------------------|:----------------------------------------------------------------|:----------|:---------|:--------|
-| Application Architecture       |                                                                 | 11:00     |          | Doncho  |
+| Application Lifecycle          |                                                                 | 11:00     |          | Doncho  |
 | Gestures                       | Using gestures.                                                 |           |          | Doncho  |
 | Animations                     | Using animations.                                               |           |          | Doncho  |
 | Action Bar                     | Abstraction over Android action bar and iOS navigation bar.     |           |          | Doncho  |
