@@ -1,18 +1,18 @@
-# Mobile Applications for iOS
+# Mobile Applications with NativeScript
 ##  Creating Game Application
 
-Design and implement a native mobile game for **iOS**. The application should be **touch-friendly** and dynamic.
+Design and implement a native mobile game for **Android or iOS with NativeScript**. The application should be **touch-friendly** and dynamic.
 
 ##  Requirements:
 
 ### Creativity
 
 - You game should not be regular 2048 or Bulls and Cows
-- **Up to 5 points**
+- **Up to 10 points**
 
 ### Dynamics
 
-- You game should  be dynamic and not turn based
+- Your game should  be dynamic and not turn based
   - Turn-based games fit more in the LoB application requirements
 - **Up to 10 points**
 
@@ -22,19 +22,20 @@ Design and implement a native mobile game for **iOS**. The application should be
   - Develop something you will play
 - **Up to 10 points**
 
-### Use custom Views
+### Use at least 3 external npm modules
 
-- **Up to 15 points**
+- **Up to 5 points**
+
 
 ### Use animations extensively
 
 - A simple fade is not a game animation
 
-- **Up to 16 points**
+- **Up to 15 points**
 
 ### Device APIs
 
-- Use four of the following device APIs:
+- Use at least **two** of the following device APIs:
   - Accelerometer
   - Camera
   - Compass
@@ -46,16 +47,14 @@ Design and implement a native mobile game for **iOS**. The application should be
 
 - **Up to 10 points**
 
-### Application Storage (SQLite)
-
-- **Up to 5 points**
+### Application Storage(SQLite) or File System Storage
+- **Up to 8 points**
 
 ### Remote data
 
 - Use some kind of remote data
   - It can be, but not limited to, one of the following:
     - Telerik backend services
-    - Parse.com
     - WebAPI RESTful API
     - JAX-RS RESTful API
     - Node.js RESTful API
@@ -70,23 +69,25 @@ Design and implement a native mobile game for **iOS**. The application should be
 
 ### Gestures
 
-- Use all of the following gestures:
-  - Swipe
-  - Fling
-  - Pinch close and pinch open
-    - Also known as:
-      - pinch-in and pinch-out
-      - zoom-in and zoom-out
-  - Long press
-  - Touch/Tap
-  - Double touch
-  - Double touch drag
+- Use at least **four** of the following gestures:
+    - Tap
+    - Double Tap
+    - Long Press
+    - Swipe
+    - Pan
+    - Pinch
+    - Rotation
+
 - **Up to 9 points**
 
-### High-quality code and reusability
+### Abstraction and reusability
 - The application code must be separated into consistent and cohesive modules
 - The modules must follow the best practices for developing applications
+- Use MVVM Pattern
 - **Up to 6 points**
+
+### Max 5 errors on JSHint
+**Up to 3 points**
 
 ### Validation and Error handling
 - Validation of user input

@@ -33,7 +33,8 @@
 ## Tuesday 16 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
 |:-------------------------------|:----------------------------------------------------------------|:----------|:---------|:--------|
-| Gestures                       | Using gestures.                                                 | 11:00     |          | Doncho  |
+| Application Lifecycle          |                                                                 | 11:00     |          | Doncho  |
+| Gestures                       | Using gestures.                                                 |           |          | Doncho  |
 | Animations                     | Using animations.                                               |           |          | Doncho  |
 | Action Bar                     | Abstraction over Android action bar and iOS navigation bar.     |           |          | Doncho  |
 | **Workshop**                   |                                                                 |           |          | Anyone  |
@@ -41,9 +42,9 @@
 ## Wednesday 17 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |
 |:-------------------------------|:----------------------------------------------------------------|:----------|:---------|:--------|
-| Hardware access                | Accessing camera, location and other native.                    | 11:00     |          | Cuki    |
-| Native API access              | Accessing native APIs (functions, arrays, classes, etc... ).    |           |          | Plamen  |
-| **Workshop**                   |                                                                 |           |          | Anyone  |
+| **Workshop**                   |                                                                 | 13:00     |          | Cuki    |
+| Hardware access                | Accessing camera, location and other native.                    |           |          | Cuki    |
+| Native API access              | Accessing native APIs (functions, arrays, classes, etc... ).    | 18:00     |          | Plamen  |
 
 ## Thursday 18 February 2016
 | Topic title                    | Description                                                     | Starts at | Duration | Trainer |

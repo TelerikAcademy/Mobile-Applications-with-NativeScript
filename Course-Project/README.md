@@ -1,6 +1,6 @@
 # Mobile Applications for iOS
 
-Each student develops a mobile application with NativeScript (either foro iOS and/or Android). The application should comply with the requirements for either [Game application](GAME_APP_REQUIREMENTS.md) or [Line-of-business application](LOB_APP_REQUIREMENTS.md).
+Each student develops a mobile application with NativeScript (either for iOS and/or Android). The application should comply with the requirements for either [Game application](GAME_APP_REQUIREMENTS.md) or [Line-of-business application](LOB_APP_REQUIREMENTS.md).
 
 ##  General Requirements
 
@@ -17,7 +17,7 @@ Each student develops a mobile application with NativeScript (either foro iOS an
 Each student who wants to defend their project in front of a trainer and pass the course has to meet the following requirements:
 
 - Course registration at http://telerikacademy.com/Courses/Courses/Details/316
-- Project documentation submitted no later than 23:59 on February 17
+- Project documentation submitted no later than 10:00 on February 19
   - Requirements for the project documentation can be found [here](#requirements-documentation)
 
 ##  Examination procedure
@@ -42,7 +42,7 @@ The examination for each student will be done as follows:
 - The student **must answer all questions** of the trainer, concerning their application
   - Any unanswered questions about the code and/or the application can lead to score penalties
   - Any **hint of lack of understanding** of a component of the application results in **fewer or no** project points
-- The trainer prepares writtern feedback on each student application
+- The trainer prepares written feedback on each student application
   - This is done without the presence of the student
 
 - Each student will receive **their personal feedback** from the trainer **after the examination of all students is finished**
@@ -57,7 +57,7 @@ Each student who wants to take the course and defend their application must writ
 The documentation must include:
 
 - 1-3 paragraphs with the application concept
-- 5-8 bullet poins of the functionality
+- 5-8 bullet points of the functionality
 - Images with sample UI of the application (optional)
 
 Write your documentation in **Markdown** and commit it as **README.md** of your repository
