@@ -1,0 +1,12 @@
+{
+  "nativescript": {
+    "id": "org.nativescript.eventsdemos",
+    "tns-android": {
+      "version": "1.5.1"
+    }
+  },
+  "dependencies": {
+    "moment": "^2.11.2",
+    "tns-core-modules": "1.5.2"
+  }
+}

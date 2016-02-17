@@ -1,0 +1,7 @@
+.rect {
+  width: 50;
+  height: 50;
+  border-radius: 15;
+  border-color: black;
+  border-width: 1
+}

@@ -1,0 +1,9 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout>
+    <Label class="title" text="Single animations" />
+    <AbsoluteLayout class="animation-canvas">
+      <Label text="Tap me to animate" tap="animate"
+          class="animation-shape" />
+    </AbsoluteLayout>
+  </StackLayout>
+</Page>

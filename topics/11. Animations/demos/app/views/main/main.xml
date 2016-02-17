@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout>
+    <Button text="Single animation" class="btnNavigation" tap="goToSingleAnimation" />
+    <Button text="Multiple animations" class="btnNavigation" tap="goToMultipleAnimations" />
+    <Button text="Chained animations" class="btnNavigation" tap="goToChainedAnimations" />
+    <Button text="Animation sets" class="btnNavigation" tap="goToAnimationSets" />
+  </StackLayout>
+</Page>

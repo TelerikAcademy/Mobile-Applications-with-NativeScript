@@ -1,0 +1,53 @@
+﻿.title {
+    font-size: 30;
+    horizontal-align: center;
+    margin: 20;
+}
+
+button {
+    font-size: 32;
+    horizontal-align: strech;
+}
+
+.btnNavigation {
+  font-size: 26;
+  horizontal-align: stretch;
+  margin: 0;
+  padding: 15
+}
+
+.animation-canvas {
+  border-color: black;
+  border-width: 1;
+  height: 400;
+  margin-left: 10;
+  margin-right: 10
+}
+
+.animation-shape {
+  background-color: black;
+  padding: 5;
+  color: yellowgreen;
+  border-radius: 5
+}
+
+.animation-rect {
+  border-color: yellowgreen;
+  border-width: 1;
+  width: 25;
+  height: 25;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.btn-select {
+  font-size:14;
+  background-color: #cbcbcb;
+  border-radius: 5
+  margin-right: 5
+}
+
+.btn-pressed {
+  color: white;
+  background-color: #888;
+}

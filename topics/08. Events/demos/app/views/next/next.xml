@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+  loaded="pageLoaded"
+  unloaded="pageUnloaded">
+  <Label text="Next pAge"
+    loaded="labelLoaded"
+      unloaded="labelUnloaded"/>
+
+</Page>

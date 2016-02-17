@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout>
+    <Label class="title" text="Animations sets" />
+    <GridLayout columns="*,*"
+          height="40">
+      <Button id="select-btn-simultaneously"
+        class="btn-select btn-pressed"
+        text="Simultaneously"
+        col="0"
+        tap="onSelectBtnTap"
+        state="false" />
+      <Button id="select-btn-sequentially"
+        class="btn-select"
+        text="Sequentially"
+        col="1"
+        tap="onSelectBtnTap"
+        state="true" />
+    </GridLayout>
+    <Button text="Animate" tap="animate" isRefreshed="true"/>
+    <AbsoluteLayout class="animation-canvas">
+      <Label id="shape-1" tap="animate"
+          class="animation-rect" />
+      <Label id="shape-2" tap="animate"
+          class="animation-rect" />
+      <Label id="shape-3" tap="animate"
+          class="animation-rect" />
+      <Label id="shape-4" tap="animate"
+          class="animation-rect" />
+    </AbsoluteLayout>
+  </StackLayout>
+</Page>
