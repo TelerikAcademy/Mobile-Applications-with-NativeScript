@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+  loaded="pageLoaded">
+  <StackLayout>
+    <Label text="Telerik Academy Courses"
+        class="title" />
+    <ListView items="{{courses}}"
+      itemTap="courseItemTapped"
+      loadMoreItems="{{loadMoreCourses}}">
+      <ListView.itemTemplate>
+        <Label class="course-title" text="{{title}}" />
+      </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
+</Page>

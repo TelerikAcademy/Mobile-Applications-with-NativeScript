@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+  loaded="pageLoaded"
+  navigatedTo="pageNavigatedTo">
+  <StackLayout>
+    <Label class="title"
+      text="{{title}}" />
+    <Label text="{{description}}"
+      class="description"
+      textWrap="true"
+      doubleTap="zoomInDescription"
+      longPress="zoomOutDescription"/>
+  </StackLayout>
+</Page>
