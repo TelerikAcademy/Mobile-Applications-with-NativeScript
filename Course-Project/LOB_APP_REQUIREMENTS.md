@@ -1,4 +1,4 @@
-# Mobile Applications for iOS
+# Mobile Applications with NativeScript
 ##  Creating Line-of-business (LoB) Application
 
 Design and implement a native mobile application for **Android or iOS with NativeScript**. The application should be **touch-friendly** and should provide **actual functionality** which users can take advantage of. That is, the application must be of value to the end user of a tablet or smartphone, enabling them to consume/produce real content. **DO NOT make an application for imaginary or unrealistic tasks**
