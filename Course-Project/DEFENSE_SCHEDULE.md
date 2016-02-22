@@ -25,10 +25,10 @@
 | 14:45 | Team 3          |
 | 15:00 | Team 6 - Online |
 | 15:15 | Team 7 - Online |
-| 15:30 | Team 2 - Online |
-| 15:45 | Team 5 - Online |
-| 16:00 | Team 9 - Online |
-| 16:15 | Team 1 - Online |
-| 16:45 | Team 8 - Online |
-| 17:00 | Team 4 - Online |
-| 17:15 | Team 3 - Online |
+| 16:30 | Team 2 - Online |
+| 16:45 | Team 5 - Online |
+| 17:00 | Team 9 - Online |
+| 17:15 | Team 1 - Online |
+| 17:30 | Team 8 - Online |
+| 17:45 | Team 4 - Online |
+| 18:00 | Team 3 - Online |
