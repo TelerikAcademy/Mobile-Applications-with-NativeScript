@@ -84,8 +84,11 @@ Design and implement a native mobile application for **Android or iOS with Nativ
 
 ### Abstraction and reusability
 - The application code must be separated into consistent and cohesive modules
+  - **Up to 2 points**
 - The modules must follow the best practices for developing applications
+  - **Up to 2 points**
 - Use MVVM Pattern
+  - **Up to 2 points**
 - **Up to 6 points**
 
 ### Max 5 errors on JSHint
