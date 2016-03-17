@@ -89,6 +89,13 @@ choco install android-sdk
 SETX ANDROID_HOME "Path to the Android SDK install folder" /M
 ```
 - Restart command prompt
+- Install the required Android SDKs and the Local Maven repository for Support Libraries
+```
+echo yes | "%ANDROID_HOME%\tools\android" update sdk --filter tools,platform-tools,android-23,build-tools-23.0.2,extra-android-m2repository,extra-google-m2repository,extra-android-support --all --no-ui
+```
+
+<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->
+# Setup environment in Windows
 
 `4.` Device or emulator
 
@@ -96,9 +103,6 @@ SETX ANDROID_HOME "Path to the Android SDK install folder" /M
 - [avd manager](http://developer.android.com/tools/help/avd-manager.html)
 - Or you can use your android device
 
-
-<!-- attr: { class:'slide', hasScriptWrapper:true, style: 'font-size: 36px;' } -->
-# Setup environment in Windows
 `5.` Install the NativeScript CLI
 
 - In command prompt run following command
