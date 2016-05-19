@@ -1,0 +1,5 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+  <StackLayout>
+  	<Label text="Nav with Page Name" textWrap="true" class="title" />
+  </StackLayout>
+</Page>
