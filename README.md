@@ -1,39 +1,63 @@
 # Repository for the "Mobile applications with NativeScript" course
 
-<!-- description -->
 ##  Course description
+NativeScript е платформа за създаване на мултиплатформени native мобилни приложения с преизползваем код. Благодарение на NativeScript програмистите по свете вече могат да създават мобилни приложения за Android и iOS използвайки не Java и Objective-C/Swift, а JavaScript, TypeScript и Angular 2. NativeScript е безплатен, с отворен код и има пълна поддръжка на всички нужни функционалности за създаване на красиво и бързо работещо мобилно приложение.
 
-<!-- Overview -->
-The "Mobile applications with NativeScript" course shows the student how to create cross-platform applications using JavaScript.
+По време на курса "Мобилни приложения с NativeScript" ще ви покажем как да си настроите средата за разботка, как да използвате Angular 2 за създаване на мобилно приложение и как да работите с данни. Ще научите как може да работите с галерията на мобилно устройство, как да достъпвате геолокацията, както и как да използвате другите възможности на устройстрово.
+След преминаване на курса, курсистите ще могат да създават мобилни приложения за популярните мобилни платформи: Android и iOS.
 
-The topics of the course will cover the platform Telerik NativeScript, that allows the creation of **native** applications using JavaScript (TypeScript), CSS and XML. 
-
-<!-- Prerequisits -->
-To take part in the course, all participants must have advanced skills in JavaScript and modular JavaScript. Basic CSS and HTML skills are a plus
-
-<!-- Value  -->
-Students that pass the course will be able to create cross-platform mobile applications for iOS and Android.
-
-<!-- Examination --> 
-The course examination will consist of a course project. Students will be devided into teams of two and they will have 2 weeks to create a cross-platform application. [Course Project Requirements](http://) 
-
-<!-- Brief program -->
+#   Course Program 
 The topics will consist of:
 
--  Platform setup on Windows, GNU/Linux and Mac OS X
--  Application architecture, modules, data-binding
--  UI components, layouts, styling, etc..
--  Hardware Access (Location, Camera, etc...)
--  Working with Data
-  -  SQLite
-  - File system
-  - Remote data through HTTP
+##   Day 1 (21 april 2017)
+-   Mobile applications overview
+    -   Types of mobile applications
+        -   Web applications
+        -   Hybrid applications
+            -   Apache Cordova, Ionic
+        -   Native Applications
+            -   Android, iOS, Windows
+        -   Multiplatform native applications
+            -   NativeScript, React native, Xamarin
+-   NativeScript Overview
+    -   What is NativeScript?
+    -   NativeScript architecture
+    -   Running NativeScript
+    -   NativeScript and Angular 2
+-   Platform Setup
+    -   Node.js
+    -   On Windows, macOS and Linux
+    -   Emulators
+    -   Editors
+        -   Visual Studio Code
+        -   ViM
+-   NativeScript and Angular 2
+    -   Architecture
+    -   Components, Directives, Pipes
+    -   Modules
+    -   Injection
+    -   Data-binding
 
-The full course schedule and program can be found [here](/SCHEDULE.md)
+##   Day 2 (22 april 2017)
 
-<!-- Documentation -->
-## [Documentation](https://docs.nativescript.org/)
-### Set Up Your System
-#### [Official guide for Windows](http://docs.nativescript.org/start/ns setup win)
-#### [Official guide for GNU/Linux](http://docs.nativescript.org/start/ns setup linux)
-#### [Official guide for OS X](http://docs.nativescript.org/start/ns setup os x)
+-   NativeScript UI Components
+    -   Labels, events, inputs, forms
+-   NativeScript layout
+    -   StackLayout
+    -   GridLayout
+-   Working with Data
+    -   SQLite
+    -   File system
+
+##   Day 3 (23 april 2017)
+
+-   Remote data through HTTP
+-   Building services
+-   Device APIs
+    -   Location, Camera
+    -   Wrapping them in a service
+-   Platform-specific modules
+
+## Day 4 (24 april 2017)
+
+-   Building a whole application: Live demo
