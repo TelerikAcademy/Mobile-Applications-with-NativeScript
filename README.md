@@ -9,7 +9,7 @@ NativeScript е платформа за създаване на мултипла
 #   Course Program 
 The topics will consist of:
 
-##   Day 1 (21 april 2017)
+##   Day 1 (24 april 2017)
 -   Mobile applications overview
     -   Types of mobile applications
         -   Web applications
@@ -38,7 +38,7 @@ The topics will consist of:
     -   Injection
     -   Data-binding
 
-##   Day 2 (22 april 2017)
+##   Day 2 (25 april 2017)
 
 -   NativeScript UI Components
     -   Labels, events, inputs, forms
@@ -49,7 +49,7 @@ The topics will consist of:
     -   SQLite
     -   File system
 
-##   Day 3 (23 april 2017)
+##   Day 3 (26 april 2017)
 
 -   Remote data through HTTP
 -   Building services
@@ -57,7 +57,3 @@ The topics will consist of:
     -   Location, Camera
     -   Wrapping them in a service
 -   Platform-specific modules
-
-## Day 4 (24 april 2017)
-
--   Building a whole application: Live demo
