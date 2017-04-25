@@ -1,8 +1,0 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
-  <ListView items="{{ myItems }}" loaded="onLoaded" itemLoading="onItemLoading" itemTap="onItemTap">
-  	<ListView.itemTemplate>
-  		<Label text="{{ $value }}" textWrap="true" />
-  		
-  	</ListView.itemTemplate>
-  </ListView>
-</Page>
